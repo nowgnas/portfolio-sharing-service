@@ -10,15 +10,9 @@ import { educationRouter } from "./routers/educationRouter";
 import { pdfRouter } from "./routers/pdfRouter";
 import { commentRouter } from "./routers/commentRouter";
 
-const app = express();
-import path from "path";
-app.use(express.static(path.join(__dirname, "../front", "build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../front", "build", "index.html"));
-});
-
 // CORS 에러 방지
+
+const app = express();
 app.use(cors());
 
 // express 기본 제공 middleware
@@ -39,4 +33,11 @@ app.use(certificateRouter);
 app.use(pdfRouter);
 app.use(errorMiddleware);
 
+import path from "path";
+
+app.use(express.static(path.join(__dirname, "../front", "build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../front", "build", "index.html"));
+});
 export { app };
