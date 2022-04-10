@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#root {
+  background-color: #dbdbdb;
+}
+.mainPageTitle {
+  text-align: center;
+  font-size: 7rem;
+  padding-top: 2rem;
+  color: #29308a !important;
+  font-family: 'Anton', sans-serif;
+}
+
+/* nav */
+.nav-link {
+  color: #5a5a81 !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-link-item {
+  padding: 0, 0, 2rem, 2rem;
+}
+
+/* card */
+body .card {
+  border-radius: 1rem;
+  background-color: #f8f9fb;
+}
+
+/* education, award, project, certificate */
+body .card-title.comTitle {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.7rem;
+  color: #2856ac;
+  font-family: 'Anton', sans-serif;
+}
+.col > span.main {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 0.7rem;
+}
+.col > span.sub {
+  font-size: 1.3rem;
+  margin-left: 0.7rem;
+}
+
+/* card user */
+.card-title.userName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.card-subtitle.userEmail {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.card-text.userDescription {
+  font-size: 1.2rem;
+}
+
+.card-title.commentTitle {
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+  color: #2856ac;
+  font-family: 'Anton', sans-serif;
+}
+
+/*  */
+div > button {
+  margin-right: 10px;
+}
+
+.container-fluid {
+  padding-top: 1.7rem;
+}
+
+.pdfBtn {
+  background-color: #7c7cdb !important;
+  border: none !important;
+  border-color: #7c7cdb !important;
+  font-weight: bold !important;
+  font-size: 1.1rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.plus {
+  font-weight: bold !important;
+}
+
+.commentBtn {
+  background-color: #2856ac !important;
+  color: white !important;
+  border: none !important;
+  font-weight: bold !important;
+}
+
+.loginBtn {
+  background-color: #2856ac !important;
+  border: none !important;
+  font-weight: bold !important;
+}

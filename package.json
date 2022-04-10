@@ -1,0 +1,63 @@
+{
+  "name": "portfolio-share-service",
+  "version": "1.0.0",
+  "description": "아래 공식 문서 참조 \\\r https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ \\\r `mongosh` 커맨드로 서버가 들어가지면 성공적으로 구축된 것입니다. \\",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node",
+    "test": "jest --setupFiles dotenv/config",
+    "heroku-postbuild": "cd front && yarn install --only=dev && yarn install && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "@sindresorhus/is": "^4.2.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "fs-extra": "^10.0.1",
+    "handlebars": "^4.7.7",
+    "install": "^0.13.0",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.6",
+    "npm": "^8.5.5",
+    "pdfkit": "^0.13.0",
+    "puppeteer": "^13.5.1",
+    "supertest": "^6.1.6",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.4",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "modulePathIgnorePatterns": [
+      "__config__"
+    ]
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}
